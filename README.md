@@ -15,3 +15,7 @@ If you read through the above issue you will see there is a potentially better s
 - Clone
 - `npm install`
 - `npm start`
+
+## Code used in
+
+[Private Money](https://github.com/klequis/private-money-client)
