@@ -33,23 +33,6 @@ const TitleH1 = styled.h1`
   margin-bottom: 20px;
 `;
 
-// border-color: black;
-// border-color: ${(props) => getColor(props)};
-
-const Accepted = (fileList) => {
-  console.log("list", fileList);
-  if (!fileList) {
-    return null;
-  }
-  return (
-    <ul>
-      {[].map((f) => (
-        <li>{f.name}</li>
-      ))}
-    </ul>
-  );
-};
-
 export const FilesFromEvent = (props) => {
   const [_accepted, _setAccepted] = useState([]);
   const [_rejected, _setRejected] = useState([]);
@@ -116,20 +99,8 @@ async function myCustomFileGetter(event) {
 
   for (var i = 0; i < fileList.length; i++) {
     const file = fileList.item(i);
-    // console.log("file", file);
-
-    // -->
     const filename = file.name;
-    // console.log("name", filename);
     const ext = filename.substr(filename.lastIndexOf(".") + 1);
-    // console.log("ext", ext);
-
-    // if (ext !== "csv") {
-    //   // add to rejected
-    //   console.log("REJECTED");
-    //   return [];
-    // }
-    // <--
 
     Object.defineProperty(file, "accept", {
       value: ext === "csv" ? true : false,

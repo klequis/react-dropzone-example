@@ -1,5 +1,10 @@
 {
-  "name": "react-dropzone-ex",
+  "name": "react-dropzone-example",
+  "author": {
+    "name": "Carl Becker",
+    "email": "klequis@gmail.com",
+    "url": "https://carlbecker.com/"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +17,7 @@
     "react-dropzone": "^11.3.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
+    "react-select": "^4.1.0",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.1.0"
   },
